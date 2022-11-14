@@ -1,13 +1,8 @@
 @import "navbar.scss";
 
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-
-::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.65);
-}
 
 ::-webkit-input-placeholder .input-line:focus +::input-placeholder {
-  color: #fff;
+  color: black;
 }
 
 * {
@@ -20,36 +15,19 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
-.section {
-  width: 100%;
+header{
+  background:linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/app/images/photo-1480714378408-67cf0d13bc1b-min.png);
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
-
-.container {
-  position: relative;
-  width: 1170px;
-  margin: 0 auto;
-  color: #444;
-  font-size: 14px;
-  font-weight: 300;
-  overflow: hidden;
-  
-}
-
-.section .container {
-  padding: 30px 0 50px 0;
-}
-
-.section.bg {
-  background: #f7f7f7;
-}
 /*
   Header
 */
-
-.hold {
-  height: 80px;
-}
 
 .header {
   line-height: 80px;
@@ -60,10 +38,6 @@ body{
   left: 0;
   z-index: 100;
   background: #1C1C1C;
-}
-
-.header.small > .container > #logo {
-  height: 50px;
 }
 
 #logo {
@@ -97,43 +71,34 @@ ul.nav li a {
   font-size: 18px;
 }
 
-ul.nav li:hover a {
-  color: #ffff;
-}
-
 ul.nav li a {
   padding: 21px;
   color: initial;
-  text-decoration: initial;
+  text-decoration:underline;
   color: #ffff;
 }
 /*
   Slider
 */
 
-.section .slider,
-.section .footer {
-  height: 1000px;
-  width: auto;
-}
-
 .slider{
-  background:linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/app/images/photo-1480714378408-67cf0d13bc1b-min.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: absolute;
   top: 0;
   left: 0;
 }
 
 .slidercontent {
-  text-align: center;
-  margin: 0;
   background: url(/app/images/cheshire-county-hygiene-services.svg);
   background-repeat: no-repeat;
   background-position-x: 210px;
   background-position-y: 40px;
   background-size: 20rem;
+  padding-top: 1px;
+  padding-bottom: 50px;
+}
+
+.top-page{
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .hero {
@@ -152,17 +117,7 @@ h1.hero {
 
 h2.hero {
   font-size: 20px;
-  margin: 100px;
-  border-width: 10px;
-}
-
-h1.hero:after {
-  content: "";
-  width: 300px;
-  position: relative;
-  text-align: center;
-  margin: auto;
-  margin-top: 15px;
+  margin: 0px;
 }
 
 .call {
@@ -182,13 +137,6 @@ h1.hero:after {
 .call span:hover {
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
-}
-
-.input-line:focus {
-  outline: none;
-  border-color: #fff;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
 }
 
 .ghost-round {
@@ -212,24 +160,13 @@ h1.hero:after {
   transition: all .2s ease;
 }
 
-.ghost-round:hover {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-}
-
 .input-line {
   margin-bottom: 10px;
   line-height: 2.4em;
-  color: black;
   font-weight: 300;
   letter-spacing: 0.02rem;
   font-size: 19px;
   font-size: 1.2rem;
-  // border-bottom: 3px solid rgba(255, 255, 255, 0.65);
-  // -webkit-transition: all .2s ease;
-  transition: all .2s ease;
 }
 
 .full-width {
@@ -238,10 +175,6 @@ h1.hero:after {
 
 .input-fields {
   margin-top: 25px;
-}
-
-.header-form {
-  z-index: 10;
 }
 
 .content {
@@ -259,7 +192,7 @@ h1.hero:after {
 
 .welcome {
   font-weight: 200;
-  margin-top: 75px;
+  margin-top: 10px;
   text-align: center;
   font-size: 40px;
   font-size: 2.5rem;
@@ -268,17 +201,10 @@ h1.hero:after {
 }
 
 .subtitle {
-  text-align: center;
   line-height: 1em;
   font-weight: 100;
   letter-spacing: 0px;
   letter-spacing: 0.02rem;
-}
-
-.menu {
-  background: rgba(0, 0, 0, 0.2);
-  width: 100%;
-  height: 50px;
 }
 
 .window {
@@ -301,4 +227,37 @@ h1.hero:after {
   left: 650px;
 }
 
+.socials{
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  background-color: #FFFFFF;
+}
 
+.icons{
+  float: right;
+  margin-right: 300px; 
+}
+
+.icon-button {
+  display: inline-block;
+  font-size: 4.3rem;
+  height: 3.6rem;
+  margin: 0 100px;
+  position: relative;
+  text-align: center;
+  width: 3.6rem;
+}
+
+.icon-button i {
+  color: #E27866;
+}
+
+.second-part{
+  background: url(/app/images/christoffer-engstrom-503481-unsplash-min.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 420px;
+  padding-bottom: 50px;
+  filter: invert(70%);
+}
