@@ -1,80 +1,304 @@
 @import "navbar.scss";
 
-*{
-  margin: 0;
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+::-webkit-input-placeholder .input-line:focus +::input-placeholder {
+  color: #fff;
+}
+
+* {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section {
+  width: 100%;
+}
+
+
 .container {
   position: relative;
-  text-align: center;
-  color: black;
-}
-
-.masthead-inside{
-  display: block;
-}
-
-.masthead-pic{
-  width: 100%;
-  background-size: cover;
-}
-
-.masthead-txt{
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  color: white;
-  text-align: left;
-  padding: 10px;
-}
-
-.container h1{
-  position: relative;
-  font-size: 2em;
-  margin: 50px;
-  border-top: 1px solid #FFFFFF;
-  border-top-width: 0px;  
-}
-
-.container h1:before{
-  content : "";
-  position: absolute;
-  left    : 0;
-  bottom  : 0;
-  height  : 1px;
-  width   : 10%;
-  padding-bottom: 10px;
-  border-bottom:6px solid #FFFFFF;
-}
-
-.container p {
-  font-size: 1.5rem;
-  padding-top: 25px;
-}
-
-
-button {
-  background-color: transparent;
-  border: 3px solid #FFFFFF;
-  color: #FFFFFF;
-  padding: 17px 53px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.1s;
-  cursor: pointer;
-  margin-top: 50px;
-}
-
-.masthead-button:hover{
-  background-color: transparent;
-  border: 0.5vmin solid #FFFFFF;
-}
+  width: 1170px;
+  margin: 0 auto;
+  color: #444;
+  font-size: 14px;
+  font-weight: 300;
+  overflow: hidden;
   
-@media only screen and (min-width: 1920px) {
-    .col-12 {width: 100%;}
 }
+
+.section .container {
+  padding: 30px 0 50px 0;
+}
+
+.section.bg {
+  background: #f7f7f7;
+}
+/*
+  Header
+*/
+
+.hold {
+  height: 80px;
+}
+
+.header {
+  line-height: 80px;
+  width: 100%;
+  transition: line-height 0.2s linear, box-shadow 0.2s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #1C1C1C;
+}
+
+.header.small > .container > #logo {
+  height: 50px;
+}
+
+#logo {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  float: left;
+  height: 40px;
+  width: 170px;
+  margin-left: 5px;
+  background: url(app/images/cheshire-county-hygiene-services.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+ul.nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav li {
+  float: left;
+  position: relative;
+}
+
+ul.nav li a {
+  transition: color 0.2s linear;
+  font-size: 18px;
+}
+
+ul.nav li:hover a {
+  color: #ffff;
+}
+
+ul.nav li a {
+  padding: 21px;
+  color: initial;
+  text-decoration: initial;
+  color: #ffff;
+}
+/*
+  Slider
+*/
+
+.section .slider,
+.section .footer {
+  height: 1000px;
+  width: auto;
+}
+
+.slider{
+  background:linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(app/images/photo-1480714378408-67cf0d13bc1b-min.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slidercontent {
+  text-align: center;
+  margin: 0;
+  background: url(app/images/cheshire-county-hygiene-services.svg);
+  background-repeat: no-repeat;
+  background-position-x: 210px;
+  background-position-y: 40px;
+  background-size: 20rem;
+}
+
+.hero {
+  color: white;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding-bottom: 19px;
+  margin: 0px;
+}
+
+h1.hero {
+  font-size: 54px;
+  margin: 200px;
+  padding: 0;
+}
+
+h2.hero {
+  font-size: 20px;
+  margin: 100px;
+  border-width: 10px;
+}
+
+h1.hero:after {
+  content: "";
+  width: 300px;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.call {
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.call span {
+  display: inline;
+  border: 1px solid white;
+  padding: 8px 13px;
+  font-size: 20px;
+  transition: background 0.15s linear;
+}
+
+.call span:hover {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.input-line:focus {
+  outline: none;
+  border-color: #fff;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.ghost-round {
+  cursor: pointer;
+  background-color: #41D395;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 0px;
+  width: 100%;
+  color: #FFFFFF;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  font-size: 19px;
+  font-size: 1.2rem;
+  font-family: roboto;
+  font-weight: 300;
+  line-height: 2.5em;
+  margin-top: auto;
+  margin-bottom: 25px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.ghost-round:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.input-line {
+  margin-bottom: 10px;
+  line-height: 2.4em;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+  font-size: 19px;
+  font-size: 1.2rem;
+  // border-bottom: 3px solid rgba(255, 255, 255, 0.65);
+  // -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.input-fields {
+  margin-top: 25px;
+}
+
+.header-form {
+  z-index: 10;
+}
+
+.content {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  z-index: 5;
+}
+
+.welcome {
+  font-weight: 200;
+  margin-top: 75px;
+  text-align: center;
+  font-size: 40px;
+  font-size: 2.5rem;
+  letter-spacing: 0px;
+  letter-spacing: 0.05rem;
+}
+
+.subtitle {
+  text-align: center;
+  line-height: 1em;
+  font-weight: 100;
+  letter-spacing: 0px;
+  letter-spacing: 0.02rem;
+}
+
+.menu {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 50px;
+}
+
+.window {
+  z-index: 100;
+  color: #333333;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  height: 560px;
+  width: 360px;
+  background: #fff;
+  margin: 150px;
+  left: 650px;
+}
+
+
