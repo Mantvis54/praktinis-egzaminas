@@ -306,20 +306,21 @@ li:hover{
 #third-part{
   background-color: #1C1C1C;
   color: #F5F5F5;
-  height: 450px;  
+  height: 900px;  
 }
 
 .thirdpart{
-  float: right;
-  position: absolute;
-  display: flex;
-  width: 300px;
-  margin-right: 250px;
-  margin-top: 100px;
+  width: 100%;
 }
 
 .thirdhero{
-  margin-right: 500px;
+  margin-left: 880px;
+  margin-bottom: 100px;
+}
+
+.third-hero2{
+  width: 550px;
+  margin-top: 80px;
 }
 
 .third-hero{
@@ -327,31 +328,179 @@ li:hover{
 }
 
 .title{
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  padding: 200px;
   display: flex;
+  justify-content: flex-end;
+}
+
+.icons-hero{
+  width: 530px;
+  height: 200px;
   float: right;
-  width: 1200px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.iconshero{
+  margin-right: 20px;
+  align-items: center;
+  position: absolute;
+}
+
+.icon{
+  background-image: url(/app/images/comment-regular.svg);
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  padding: 25px;
+  background-color: #E27866;
+  border-radius: 50%;
+  position: absolute;
+  margin-right: 50px;
+}
+
+.icon2{
+  background-image: url(/app/images/eye-regular.svg);
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  padding: 25px;
+  background-color: #E27866;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.iconshero{
+  margin-top: 600px;
 }
 
 .brand-image{
   background-image: url(/app/images/cheshire-county-hygiene-services.svg);
   background-repeat: no-repeat;
+  background-size: 45rem;
   width: 100%;
-  height: 200px;
+  height: 350px;
   position: absolute;
-
 }
 
 // fourth part
 
+.fourthpart{
+  width: 100%;
+  height: 800px;
+  background-color: #fff;
+  display: flex;
+}
 
+.title-2{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
 
+.icon-title{
+  width: 100%;
+}
 
+.icon-title2{
+  width: 100%;
+}
 
+.icon-title3{
+  width: 100%;
+}
+
+.icontitle{
+  display: flex;
+  margin-left: 450px;
+  align-items: center;
+}
+
+.iconwhy{
+  display: flex;
+  align-items: center;
+}
+
+.ikona{
+  background-image: url(/app/images/medal-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  padding: 24px;
+}
+
+.ikona2{
+  background-image: url(/app/images/medal-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  padding: 24px;
+}
+
+.ikona3{
+  background-image: url(/app/images/cc-visa.svg);
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  padding: 24px;
+}
+
+#title2{
+  display: column;
+  margin-top: 350px;
+  margin-left: 250px;
+}
+
+// fifth part
 
 #fifth-part{
-  background-color: #6696E2;
-  height: 200px;
+  background: #6696E2;
+  color: #FFFFFF;
+  padding: 2em 0 8em;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
 }
+
+.price-table-wrapper{
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  margin-left: 700px;
+  
+  .pricing-table{
+    border-radius: 10px;
+    background: white;
+    margin: 40px;
+    transition: all 0.3s ease-in-out;
+    
+    &__header{
+      padding: 20px;
+      font-size: 20px;
+      color: #FFFFFF;
+      background: #1C1C1C;
+    }
+    &__price{
+      color: #FFFFFF;
+      background-color: #1C1C1C;
+      padding: 20px;
+      margin: auto;
+      font-size: 40px;
+      font-weight: 500;
+    }
+    &__list{
+      padding: 20px;
+      color: #A0A0A0;
+      li{
+        padding: 15px;
+      }
+    }
+  }
+}
+
+.prc-hero{
+  text-align: center;
+  margin-left: 700px;
+}
+
+
 
 #seventh-part{
   background-color: #E27866;
