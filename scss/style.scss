@@ -81,9 +81,6 @@ li:hover{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
 }
 
 .slidercontent {
@@ -183,33 +180,28 @@ li:hover{
 // Socialis
 
 .top-page{
-  // position: absolute;
-  background-color: #fff;
+  line-height: 80px;
   width: 100%;
-  
+  background: #fff;
 }
 
 .socials{
-
+  display: flex;
 }
 
 .icons{
   float: right;
-  padding: 0;
 }
 
 .icons-text{
   text-align: start;
-  right: 20px;
 }
 
 .icon-button {
   display: inline-block;
   font-size: 4.3rem;
-  height: 3.6rem;
-  margin: 0 100px;
-  text-align: center;
-  width: 3.6rem;
+  margin:80px;
+  margin-right: 150px;
 }
 
 .icon-button i {
@@ -225,21 +217,34 @@ li:hover{
   padding-bottom: 50px;
 }
 
-.left-boxes{
-  position: relative;
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
+.secondpart{
+  display: flex;
+  justify-content: center;
 }
 
-.second-hero{
+.left-boxes{
+  position: relative;
+  display: flexbox;
+  margin-top: 50px;
+}
+
+.second-text{
+  display: column;
+  margin-top: 150px;
+}
+
+.second-hero1{
+  color: #fff;
+  word-wrap: break-word;
+  width: 350px;
+  margin-left: 150px;
+}
+
+.second-hero2{
   color: #fff;
   text-align: center;
   word-wrap: break-word;
-  width: 350px;
-  margin: 50px;
-  padding: 0;
+  width: 650px;
 }
 
 .explore{
@@ -266,10 +271,53 @@ li:hover{
   text-align: center;
 }
 
+.topboxes{
+  display: flex;
+}
+
+.right-boxes{
+  margin: 100px;
+}
+
+.explore2{
+  height: 150px;
+  width: 150px;
+  background-image: url(/app/images/photo-1493409137604-0901c55e4456@2x.png);
+  background-size: cover;
+}
+
+.boxpic{
+  height: 150px;
+  width: 150px;
+  background-image: url(/app/images/photo-1543364195-bfe6e4932397.png);
+  background-size: cover;
+}
+
+.boxpic2{
+  height: 150px;
+  width: 350px;
+  background-image: url(/app/images/photo-1448387473223-5c37445527e7.png);
+  background-size: cover;
+}
+
+// third part
+
+
 #third-part{
   background-color: #1C1C1C;
   height: 200px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 #fifth-part{
   background-color: #6696E2;
