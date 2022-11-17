@@ -177,6 +177,39 @@ li:hover{
   bottom: 300px;
 }
 
+.last-round{
+  background-color: #41D395;
+  border: none;
+  color: #1C1C1C;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  // display: inline-block;
+  font-size: 2rem;
+  margin: 30px;
+  margin-top:54px;
+  margin-left: 10px;
+  width: 100%;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  border-radius: 1px;
+  
+}
+
+.last-round{
+  background-color:#41D395; 
+  color: #FFFFFF; 
+  border: 1px solid #41D395;
+  border-width:0px;
+  border:none;
+}
+
+.last-round:hover{
+  background-color:#41D395;
+  color: #1C1C1C;
+  font-size: 2.1rem;
+}
+
 // Socialis
 
 .top-page{
@@ -205,6 +238,10 @@ li:hover{
 }
 
 .icon-button i {
+  color: #E27866;
+}
+
+.icon-button2 i {
   color: #E27866;
 }
 
@@ -629,9 +666,92 @@ cite{
   font-size: 1.5vmin;
 }
 
+.window-2 {
+  position: relative;
+  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  height: 500px;
+  width: 450px;
+  background: #fff;
+  margin-left: 1000px;
+}
 
+.welcome-2 {
+  font-weight: 200;
+  text-align: center;
+  font-size: 1.5rem;  
+  background-color: #F5F5F5;
+  height: 70px;
+}
+
+.last-round2{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: #1C1C1C;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.last-round2{
+  background-color:#41D395; 
+  color: black; 
+  border: 1px solid #41D395;
+  border-width:0px;
+  border:none;
+}
+
+.last-round2:hover{
+  background-color:#41D395;
+  color: #FFFFFF;
+  font-size: 1.5vmin;
+}
+
+.input-fields2{
+  padding: 50px;
+  
+}
+
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: grey
+}
+input:focus {
+  border-color: green
+}
+
+.content2{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+// RIP
 
 #bottom{
   background-color: #1C1C1C;
-  height: 200px;
+  height: 220px;
+  display: flex;
+}
+
+.pagaliau{
+  color: grey;
+  margin-left: 300px;
+  margin-top: 120px;
+}
+
+.icons2{
+  margin-left: 80px;
+}
+
+.icon-button2 {
+  display: inline-block;
+  font-size: 2.3rem;
+  margin:80px;
+  margin-right: 150px;
 }
