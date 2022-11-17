@@ -1,16 +1,19 @@
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
 
-// window.onscroll = function() {
-//     var el = document.getElementsByClassName('header')[0];
-//     var className = 'small';
-//     if (el.classList) {
-//       if (window.scrollY > 10)
-//         el.classList.add(className);
-//       else
-//         el.classList.remove(className);
-//     }
-//   };
+// Highlight the top nav as scrolling occurs
+$('body').scrollspy({
+    target: '.navbar-fixed-top'
+})
 
-//   var myApp = angular.module("myApp", []);
-// myApp.controller("RegisterCtrl", function ($scope) {
-
-// });
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
+});
