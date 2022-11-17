@@ -500,12 +500,136 @@ li:hover{
   margin-left: 700px;
 }
 
+// sisxt part
+
+#sixt-part{
+  display: flex;
+  height: 600px;
+}
+
+.sixtpart{
+  display: flex;
+  position:absolute;
+  margin: 100px;
+}
+
+cite{
+  color: black;
+}
+
+.review{
+  text-align: start;
+  display: column;
+}
+
+.review-2{
+  text-align: start;
+  display: column;
+}
+
+.review-3{
+  text-align: start;
+  display: column;
+}
+
+.review-title{
+  margin: 60px;
+  text-align: center;
+  margin-left: 700px;
+  margin-top: 0px;
+  font-size: 3rem;
+}
+
+.bubble{
+  width: 400px; 
+  height: 200px; 
+  background: #5ac4ed;
+  position: relative;
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px; 
+  border-radius: 10px;
+  text-align: start;
+  margin-left: 400px;
+  display: flex;
+}
+
+.bubble:before{
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #5ac4ed;
+  border-bottom: 13px solid transparent;
+  margin: 13px 0 0 -25px;
+}
+
+.comment{
+  width: 500px;
+}
+
+.reviewer-1{
+  align-items: center;
+}
+
+.person{
+  background-image: url(/app/images/avatar_2_u231.png);
+  background-position: center center;
+  height: 150px;
+  width: 150px !important;
+  // position: relative;
+  // left: 0;
+  // bottom: 200px;
+  border-radius: 100px;
+  border: 8px solid white;
+}
+
+.person2{
+  background-image: url(/app/images/avatar_2_u231.png);
+  background-position: center center;
+  height: 150px;
+  width: 150px !important;
+  // position: relative;
+  // right: 1;
+  // bottom: 200px;
+  border-radius: 100px;
+  border: 8px solid white;
+}
+
+.person3{
+  background-image: url(/app/images/avatar_2_u231.png);
+  background-position: center center;
+  height: 150px;
+  width: 150px !important;
+  // position: relative;
+  // right: 1;
+  // bottom: 200px;
+  border-radius: 100px;
+  border: 8px solid white;
+}
+
+// seventh part
 
 
 #seventh-part{
   background-color: #E27866;
-  height: 400px;
 }
+
+.contact-us1{
+  padding: 35px;
+  text-align: center;
+  color: #F5F5F5;
+  font-size: 3.5rem;
+}
+
+.contact-us2{
+  padding: 35px;
+  text-align: center;
+  color: #F5F5F5;
+  font-size: 1.5vmin;
+}
+
+
 
 #bottom{
   background-color: #1C1C1C;
